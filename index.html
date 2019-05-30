@@ -1,0 +1,18 @@
+<h1>Link Generator</h1>
+<input type='text' id='link'>
+<input type='button' id='gen' value='Gen'>
+<div id='out'>
+</div>
+
+<script>
+
+  let link = document.getElementById('link');
+  let gen  = document.getElementById('gen');
+  let out  = document.getElementById('out');
+
+  gen.onclick = function(){
+    let url = link.value;
+    out.innerHTML = `<a href='${url}' target='_blank'>${url}</a>`;
+  }
+
+</script>
